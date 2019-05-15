@@ -79,6 +79,8 @@ aufgabe_2_und_3_EXTERNAL_OBJECTS =
 
 source/aufgabe_2_und_3: source/CMakeFiles/aufgabe_2_und_3.dir/aufgabe_2_und_3.cpp.o
 source/aufgabe_2_und_3: source/CMakeFiles/aufgabe_2_und_3.dir/build.make
+source/aufgabe_2_und_3: external/glfw-3.2.1/src/libglfw3.a
+source/aufgabe_2_und_3: libnanovg.a
 source/aufgabe_2_und_3: source/CMakeFiles/aufgabe_2_und_3.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/datboi/GitHub/programmiersprachen-aufgabenblatt-3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable aufgabe_2_und_3"
 	cd /Users/datboi/GitHub/programmiersprachen-aufgabenblatt-3/cmake-build-debug/source && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/aufgabe_2_und_3.dir/link.txt --verbose=$(VERBOSE)

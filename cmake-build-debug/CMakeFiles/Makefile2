@@ -200,7 +200,8 @@ source/preinstall:
 # Target rules for target source/CMakeFiles/aufgabe_2_und_3.dir
 
 # All Build rule for target.
-source/CMakeFiles/aufgabe_2_und_3.dir/all:
+source/CMakeFiles/aufgabe_2_und_3.dir/all: CMakeFiles/nanovg.dir/all
+source/CMakeFiles/aufgabe_2_und_3.dir/all: external/glfw-3.2.1/src/CMakeFiles/glfw.dir/all
 	$(MAKE) -f source/CMakeFiles/aufgabe_2_und_3.dir/build.make source/CMakeFiles/aufgabe_2_und_3.dir/depend
 	$(MAKE) -f source/CMakeFiles/aufgabe_2_und_3.dir/build.make source/CMakeFiles/aufgabe_2_und_3.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/datboi/GitHub/programmiersprachen-aufgabenblatt-3/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target aufgabe_2_und_3"
@@ -213,7 +214,7 @@ all: source/CMakeFiles/aufgabe_2_und_3.dir/all
 
 # Build rule for subdir invocation for target.
 source/CMakeFiles/aufgabe_2_und_3.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/datboi/GitHub/programmiersprachen-aufgabenblatt-3/cmake-build-debug/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/datboi/GitHub/programmiersprachen-aufgabenblatt-3/cmake-build-debug/CMakeFiles 18
 	$(MAKE) -f CMakeFiles/Makefile2 source/CMakeFiles/aufgabe_2_und_3.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/datboi/GitHub/programmiersprachen-aufgabenblatt-3/cmake-build-debug/CMakeFiles 0
 .PHONY : source/CMakeFiles/aufgabe_2_und_3.dir/rule

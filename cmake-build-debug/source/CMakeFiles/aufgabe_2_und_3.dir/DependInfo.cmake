@@ -23,6 +23,8 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
+  "/Users/datboi/GitHub/programmiersprachen-aufgabenblatt-3/cmake-build-debug/external/glfw-3.2.1/src/CMakeFiles/glfw.dir/DependInfo.cmake"
+  "/Users/datboi/GitHub/programmiersprachen-aufgabenblatt-3/cmake-build-debug/CMakeFiles/nanovg.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.
