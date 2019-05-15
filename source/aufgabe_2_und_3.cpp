@@ -7,6 +7,7 @@
 #include <set>
 #include <stdlib.h>
 #include <time.h>
+#include <map>
 
 int main()
 {
@@ -16,6 +17,7 @@ int main()
     std::list<unsigned int> number_list;
     std::set<unsigned int> number_set;
     std::set<unsigned int> output_set;
+    std::map<int, int> frequency;
 
     //Generates different "random" numbers each time
     srand(time(nullptr));
@@ -27,7 +29,7 @@ int main()
         number_list.push_back(num);
     }
 
-    //Inserts every number once into the set
+    //Inserts every number once
     for (auto i : number_list)
     {
         number_set.insert(i);
@@ -39,6 +41,7 @@ int main()
         counter++;
     }
 
+    //Inserts all numbers which are not listed into a new set
     for (int i = 1; i <= 100; i++)
     {
         if (number_set.count(i) == 0)
@@ -51,10 +54,30 @@ int main()
     std::cout << "There are " << counter << " different numbers included in the list." << std::endl;
     std::cout << "Not included in the list are: " << std::endl;
 
+    //Iterates over the "output_set" and prints all numbers
     for (auto i : output_set)
     {
         std::cout << i << std::endl;
     }
 
     std::cout << "That's " << counter2 << " numbers which are not included."<< std::endl;
+
+    //Iterates over the "number_list" and adjusts the value of each key
+    for (auto & i : number_list)
+    {
+        if (frequency.find(i) == frequency.end())
+        {
+            frequency[i] = 1;
+        } else {
+            frequency[i]++;
+        }
+    }
+
+    std::cout << "Number frequency: " << std::endl;
+
+    //Prints the frequency of each number included in the std::list
+    for (auto const& pair : frequency)
+    {
+        std::cout << pair.first << " : " << pair.second << std::endl;
+    }
 }
