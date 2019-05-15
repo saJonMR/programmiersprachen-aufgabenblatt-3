@@ -17,6 +17,7 @@
   <component name="ChangeListManager">
     <list default="true" id="323945f9-53a7-42eb-b24c-18ae5dd82ce7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/source/circle.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/source/circle.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/circle.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/source/circle.hpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -55,8 +56,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/source/circle.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="119" column="9" lean-forward="true" selection-start-line="119" selection-start-column="9" selection-end-line="119" selection-end-column="9" />
+            <state relative-caret-position="378">
+              <caret line="35" column="27" selection-start-line="35" selection-start-column="27" selection-end-line="35" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -64,8 +65,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/source/circle.hpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="18" lean-forward="true" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+            <state relative-caret-position="225">
+              <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+              <folding>
+                <element signature="e#38#57#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -80,8 +84,8 @@
       <list>
         <option value="$PROJECT_DIR$/source/aufgabe_2_und_3.cpp" />
         <option value="$PROJECT_DIR$/source/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/source/circle.hpp" />
         <option value="$PROJECT_DIR$/source/circle.cpp" />
+        <option value="$PROJECT_DIR$/source/circle.hpp" />
       </list>
     </option>
   </component>
@@ -187,12 +191,12 @@
       <option name="presentableId" value="Default" />
       <updated>1557914131419</updated>
       <workItem from="1557914132789" duration="1081000" />
-      <workItem from="1557915559121" duration="6167000" />
+      <workItem from="1557915559121" duration="6359000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7248000" />
+    <option name="totallyTimeSpent" value="7440000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -205,6 +209,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2532189" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -272,15 +277,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/source/circle.hpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="18" lean-forward="true" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+        <state relative-caret-position="225">
+          <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+          <folding>
+            <element signature="e#38#57#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/source/circle.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="119" column="9" lean-forward="true" selection-start-line="119" selection-start-column="9" selection-end-line="119" selection-end-column="9" />
+        <state relative-caret-position="378">
+          <caret line="35" column="27" selection-start-line="35" selection-start-column="27" selection-end-line="35" selection-end-column="27" />
         </state>
       </provider>
     </entry>

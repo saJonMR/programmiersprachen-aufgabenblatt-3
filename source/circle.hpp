@@ -14,7 +14,6 @@ class Circle{
 	Circle();
 	Circle(Vec2 v, float r,RGB c, float d);
 	float circumference() const;
-	void draw(Window const& w)const;
 	bool is_inside(Vec2 v);
 	void uhr(Window const& w);
 

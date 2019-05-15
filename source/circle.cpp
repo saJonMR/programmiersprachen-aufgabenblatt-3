@@ -29,8 +29,8 @@ bool Circle::is_inside(Vec2 v)const{
 	Vec2 b2;
 	bool k = false;
 
-	for(float i = 0;i <= 2;i += 0.001){
-	
+	for(float i = 0;i <= 2;i += 0.001)
+	{
 		b2 = (make_rotation_mat2(PI * i) * v1) + v2;
 		if(v.x > b2.x){
 			if(v.y > b2.y){
@@ -53,9 +53,9 @@ bool Circle::is_inside(Vec2 v)const{
 		}	
 	}
 	if(! k){
-		for( float i = 0;i <= 2;i += 0.001){
-	
-		b2 = (make_rotation_mat2(PI * i) * v1) + v2;
+		for( float i = 0;i <= 2;i += 0.001)
+		{
+		    b2 = (make_rotation_mat2(PI * i) * v1) + v2;
 			if(v.x < b2.x){
 				if(v.y > b2.y){
 					k = true;
@@ -63,24 +63,20 @@ bool Circle::is_inside(Vec2 v)const{
 			}
 			if(k){
 				if(v.x < center_.x){
-					
 					k = false;
-					
 				}
 			}
 			if(k){
 				if(v.y > center_.y){
-					
 					k = false;
-					
 				}
 			}	
 		}
 	}
 	if(! k){
-		for( float i = 0;i <= 2;i += 0.001){
-	
-		b2 = (make_rotation_mat2(PI * i) * v1) + v2;
+		for( float i = 0;i <= 2;i += 0.001)
+		{
+		    b2 = (make_rotation_mat2(PI * i) * v1) + v2;
 			if(v.x < b2.x){
 				if(v.y < b2.y){
 					k = true;
@@ -99,9 +95,9 @@ bool Circle::is_inside(Vec2 v)const{
 		}
 	}
 	if(! k){
-		for(float i = 0;i <= 2;i += 0.001){
-	
-		b2 = (make_rotation_mat2(PI * i) * v1) + v2;
+		for(float i = 0;i <= 2;i += 0.001)
+		{
+		    b2 = (make_rotation_mat2(PI * i) * v1) + v2;
 			if(v.x > b2.x){
 				if(v.y < b2.y){
 					k = true;
