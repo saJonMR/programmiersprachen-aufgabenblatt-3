@@ -28,5 +28,10 @@ target_link_libraries(tests
 add_executable(aufgabe_2_und_3
         aufgabe_2_und_3.cpp
 )
-
+target_link_libraries(aufgabe_2_und_3
+        glfw
+        ${GLFW_LIBRARIES}
+        nanovg
+        ${OPENGL_LIBRARIES}
+)
 
