@@ -1,0 +1,8 @@
+STL beinhaltet die sequentiellen Container vector, deque und list, sowie die assoziativen Container set, multiset, 
+map und multimap.
+
+Sequentielle Container sind geordnete Mengen, in denen jedes Element eine bestimmte Position besitzt, welche durch den 
+Zeitpunkt und Ort des einfügens bestimmt wird.
+
+Assoziative Container sind dagegen sortierte Mengen in denen die Position der Elemente durch ein Sortierkriterium 
+bestimmt wird.
