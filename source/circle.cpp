@@ -23,99 +23,82 @@ float Circle::circumference() const{
 	return e;
 	}
 
-void Circle::draw(Window const& w)const{
-	Vec2 v1 = {radius_, 0.0f};
-	Vec2 v2 = {center_.x, center_.y};
-	Vec2 b1 = v1 + v2;
-	Vec2 b2;
-	for(float i=0;i <= 2;i+=0.001){
-		
-		b2 = (make_rotation_mat2(PI*i) * v1) + v2 ;
-		
-		w.draw_line(b1.x, b1.y, b2.x, b2.y, 0.128f, 0.128f, 0.128f,dicke_);
-		b1 = b2;
-	}
-}
-
 bool Circle::is_inside(Vec2 v)const{
 	Vec2 v1 = {radius_,0.0f};
 	Vec2 v2 = {center_.x, center_.y};
 	Vec2 b2;
 	bool k = false;
 
-	for(float i=0;i <= 2;i+=0.001){
+	for(float i = 0;i <= 2;i += 0.001){
 	
-		b2 = (make_rotation_mat2(PI*i) * v1) + v2 ;
-		if(v.x>b2.x){
-			if(v.y>b2.y){
-				k= true;
+		b2 = (make_rotation_mat2(PI * i) * v1) + v2;
+		if(v.x > b2.x){
+			if(v.y > b2.y){
+				k = true;
 			}
 		}
 		if(k){
-			if(v.x>center_.x){
-				if(v.x>b2.x){
-					k=false;
+			if(v.x > center_.x){
+				if(v.x > b2.x){
+					k = false;
 				}
 			}
 		}
 		if(k){
-			if(v.y>center_.y){
-				if(v.y>b2.y){
-					k=false;
+			if(v.y > center_.y){
+				if(v.y > b2.y){
+					k = false;
 				}
 			}
 		}	
 	}
-	if(k == false){
-		for( float i=0;i <= 2;i+=0.001){
-	
-		b2 = (make_rotation_mat2(PI * i) * v1) + v2;
-			if(v.x<b2.x){
-				if(v.y>b2.y){
-					k= true;
-				}
-			}
-			if(k){
-				if(v.x<center_.x){
-					
-					k=false;
-					
-				}
-			}
-			if(k){
-				if(v.y>center_.y){
-					
-					k=false;
-					
-				}
-			}	
-		}
-	}
-	if(k == false){
+	if(! k){
 		for( float i = 0;i <= 2;i += 0.001){
 	
 		b2 = (make_rotation_mat2(PI * i) * v1) + v2;
-			if(v.x<b2.x){
-				if(v.y<b2.y){
-					k= true;
+			if(v.x < b2.x){
+				if(v.y > b2.y){
+					k = true;
 				}
 			}
 			if(k){
-				if(v.x<center_.x){
+				if(v.x < center_.x){
 					
-					k=false;
+					k = false;
 					
 				}
 			}
 			if(k){
-				if(v.y<center_.y){
-						k=false;
+				if(v.y > center_.y){
+					
+					k = false;
 					
 				}
 			}	
 		}
 	}
-	if(k == false){
+	if(! k){
+		for( float i = 0;i <= 2;i += 0.001){
+	
+		b2 = (make_rotation_mat2(PI * i) * v1) + v2;
+			if(v.x < b2.x){
+				if(v.y < b2.y){
+					k = true;
+				}
+			}
+			if(k){
+				if(v.x < center_.x){
+					k = false;
+				}
+			}
+			if(k){
+				if(v.y < center_.y){
+						k = false;
+				}
+			}	
+		}
+	}
+	if(! k){
 		for(float i = 0;i <= 2;i += 0.001){
 	
 		b2 = (make_rotation_mat2(PI * i) * v1) + v2;
@@ -126,22 +109,16 @@ bool Circle::is_inside(Vec2 v)const{
 			}
 			if(k){
 				if(v.x > center_.x){
-					
 					k = false;
-					
 				}
 			}
 			if(k){
-				if(v.y<center_.y){
-					
-					k=false;
-					
+				if(v.y < center_.y){
+					k = false;
 				}
 			}	
 		}
 	}
-	
-	
 	return k;
 }
 
