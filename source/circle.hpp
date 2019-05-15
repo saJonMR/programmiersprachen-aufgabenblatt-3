@@ -2,7 +2,6 @@
 #define CIRCLE_HPP
 #include "vec2.hpp"
 #include "color.hpp"
-#include "window.hpp"
 #include "mat2.hpp"
 
 class Circle{

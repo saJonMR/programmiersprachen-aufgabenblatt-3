@@ -11,12 +11,11 @@ Circle::Circle():
 
 
 
-Circle::Circle(Vec2 v, float r, RGB c,float d){
-	center_ = v;
-	radius_ = r;
-	color_ = c;
-	dicke_ = d;
-}
+Circle::Circle(Vec2 v, float r, RGB c,float d):
+	center_ {v},
+	radius_ {r},
+	color_ {c},
+	dicke_ {d} {}
 
 float Circle::circumference() const{
 	float e;
@@ -24,7 +23,7 @@ float Circle::circumference() const{
 	return e;
 	}
 
-void  Circle::draw(Window const& w)const{
+void Circle::draw(Window const& w)const{
 	Vec2 v1 = {radius_, 0.0f};
 	Vec2 v2 = {center_.x, center_.y};
 	Vec2 b1 = v1 + v2;
@@ -67,10 +66,10 @@ bool Circle::is_inside(Vec2 v)const{
 			}
 		}	
 	}
-	if(k==false){
-		for(float i=0;i <= 2;i+=0.001){
+	if(k == false){
+		for( float i=0;i <= 2;i+=0.001){
 	
-		b2 = (make_rotation_mat2(PI*i) * v1) + v2 ;
+		b2 = (make_rotation_mat2(PI * i) * v1) + v2;
 			if(v.x<b2.x){
 				if(v.y>b2.y){
 					k= true;
@@ -92,10 +91,10 @@ bool Circle::is_inside(Vec2 v)const{
 			}	
 		}
 	}
-	if(k==false){
-		for(float i=0;i <= 2;i+=0.001){
+	if(k == false){
+		for( float i = 0;i <= 2;i += 0.001){
 	
-		b2 = (make_rotation_mat2(PI*i) * v1) + v2 ;
+		b2 = (make_rotation_mat2(PI * i) * v1) + v2;
 			if(v.x<b2.x){
 				if(v.y<b2.y){
 					k= true;
@@ -116,19 +115,19 @@ bool Circle::is_inside(Vec2 v)const{
 			}	
 		}
 	}
-	if(k==false){
-		for(float i=0;i <= 2;i+=0.001){
+	if(k == false){
+		for(float i = 0;i <= 2;i += 0.001){
 	
-		b2 = (make_rotation_mat2(PI*i) * v1) + v2 ;
-			if(v.x>b2.x){
-				if(v.y<b2.y){
-					k= true;
+		b2 = (make_rotation_mat2(PI * i) * v1) + v2;
+			if(v.x > b2.x){
+				if(v.y < b2.y){
+					k = true;
 				}
 			}
 			if(k){
-				if(v.x>center_.x){
+				if(v.x > center_.x){
 					
-					k=false;
+					k = false;
 					
 				}
 			}
