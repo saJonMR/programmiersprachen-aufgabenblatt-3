@@ -8,6 +8,7 @@
 #include <stdlib.h>
 #include <time.h>
 #include <map>
+#include <vector>
 
 int main()
 {
@@ -30,13 +31,13 @@ int main()
     }
 
     //Inserts every number once
-    for (auto i : number_list)
+    for (int i : number_list)
     {
         number_set.insert(i);
     }
 
     //Counts the amount of numbers in the set
-    for (auto & i : number_set)
+    for (int i : number_set)
     {
         counter++;
     }
@@ -60,10 +61,10 @@ int main()
         std::cout << i << std::endl;
     }
 
-    std::cout << "That's " << counter2 << " numbers which are not included."<< std::endl;
+    std::cout << "That's " << counter2 << " numbers which are not included.\n-------------------------"<< std::endl;
 
     //Iterates over the "number_list" and adjusts the value of each key
-    for (auto & i : number_list)
+    for (auto i : number_list)
     {
         if (frequency.find(i) == frequency.end())
         {
@@ -73,11 +74,27 @@ int main()
         }
     }
 
-    std::cout << "Number frequency: " << std::endl;
+    std::cout << "Number frequency of list: " << std::endl;
 
     //Prints the frequency of each number included in the std::list
     for (auto const& pair : frequency)
     {
         std::cout << pair.first << " : " << pair.second << std::endl;
     }
+
+    std::cout << "------------\nAufgabe 3.9: " << std::endl;
+
+    /*
+    Aufgabe 3.10
+    */
+
+    //Initialises a new vector
+    std::vector<int> aufgabe_9;
+
+    //Copies elements of "number_list" into "aufgabe_9" and prints to console
+    std::copy(std::begin(number_list), std::end(number_list), std::back_inserter(aufgabe_9));
+    std::copy(std::begin(aufgabe_9), std::end(aufgabe_9), std::ostream_iterator<int>(std::cout, "\n"));
+
+
+    return 0;
 }
