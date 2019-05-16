@@ -28,10 +28,19 @@ target_link_libraries(tests
 add_executable(aufgabe_2_und_3
         aufgabe_2_und_3.cpp
 )
-target_link_libraries(aufgabe_2_und_3
-        glfw
-        ${GLFW_LIBRARIES}
-        nanovg
-        ${OPENGL_LIBRARIES}
+
+# Build circle
+add_executable(aufgabe_4_1
+        aufgabe_4_1.cpp
+        circle.cpp
+        circle.hpp
+        vec2.cpp
+        vec2.hpp
+        mat2.cpp
+        mat2.hpp
 )
 
+# Build aufgabe_9
+add_executable(aufgabe_9
+        aufgabe_9.cpp
+)
