@@ -15,7 +15,7 @@ add_dependencies(example glfw nanovg ${COPY_BINARY})
 # Build aufgabe_2_und_3
 add_executable(aufgabe_2_und_3
         aufgabe_2_und_3.cpp
-)
+        )
 
 # Build circle
 add_executable(aufgabe_4_1
@@ -26,12 +26,7 @@ add_executable(aufgabe_4_1
         vec2.hpp
         mat2.cpp
         mat2.hpp
-)
-
-# Build aufgabe_9
-add_executable(aufgabe_9
-        aufgabe_9.cpp
-)
+        )
 
 # Build aufgabe_6
 add_executable(aufgabe_6
@@ -42,4 +37,19 @@ add_executable(aufgabe_6
         circle.cpp
         mat2.hpp
         mat2.cpp
-)
+        )
+
+# Build aufgabe_9
+add_executable(aufgabe_9
+        aufgabe_9.cpp
+        )
+
+# Build aufgabe_11
+add_executable(aufgabe_11
+        aufgabe_11.cpp
+        )
+
+# Build test
+add_executable(test
+        test.cpp
+        )
