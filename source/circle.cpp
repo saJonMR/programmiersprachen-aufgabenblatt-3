@@ -40,7 +40,7 @@ bool Circle::is_inside(Vec2 v) const{
 	Vec2 b2;
 	bool k = false;
 
-	for(float i = 0;i <= 2;i += 0.001)
+	for(float i = 0; i <= 2; i += 0.001)
 	{
 		b2 = (make_rotation_mat2(PI * i) * v1) + v2;
 		if(v.x > b2.x){
@@ -64,7 +64,7 @@ bool Circle::is_inside(Vec2 v) const{
 		}	
 	}
 	if(! k){
-		for( float i = 0;i <= 2;i += 0.001)
+		for( float i = 0; i <= 2; i += 0.001)
 		{
 		    b2 = (make_rotation_mat2(PI * i) * v1) + v2;
 			if(v.x < b2.x){
@@ -85,7 +85,7 @@ bool Circle::is_inside(Vec2 v) const{
 		}
 	}
 	if(! k){
-		for( float i = 0;i <= 2;i += 0.001)
+		for( float i = 0; i <= 2; i += 0.001)
 		{
 		    b2 = (make_rotation_mat2(PI * i) * v1) + v2;
 			if(v.x < b2.x){
@@ -106,7 +106,7 @@ bool Circle::is_inside(Vec2 v) const{
 		}
 	}
 	if(! k){
-		for(float i = 0;i <= 2;i += 0.001)
+		for(float i = 0; i <= 2; i += 0.001)
 		{
 		    b2 = (make_rotation_mat2(PI * i) * v1) + v2;
 			if(v.x > b2.x){
@@ -129,11 +129,11 @@ bool Circle::is_inside(Vec2 v) const{
 	return k;
 }
 
-std::string Circle::getName() {
+std::string Circle::getName() const {
     return name_;
 }
 
-float Circle::getRadius() {
+float Circle::getRadius() const {
     return radius_;
 }
 

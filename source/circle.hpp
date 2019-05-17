@@ -21,8 +21,8 @@ public:
 	float circumference() const;
 	bool is_inside(Vec2 v) const;
 
-    std::string getName();
-    float getRadius();
+    std::string getName() const;
+    float getRadius() const;
     float getPosX();
     float getPosY();
     float getColorR();
@@ -31,7 +31,18 @@ public:
 
     std::ostream& print(std::ostream& os) const;
 
-
+    bool operator<(Circle const& rhs) const
+    {
+        return (radius_ < rhs.radius_);
+    }
+    bool operator>(Circle const& rhs) const
+    {
+        return (radius_ > rhs.radius_);
+    }
+    bool operator==(Circle const& rhs) const
+    {
+        return (radius_ == rhs.radius_);
+    }
 };
 
 std::ostream& operator<<(std::ostream& os, Circle const& circ);
