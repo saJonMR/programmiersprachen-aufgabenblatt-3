@@ -24,7 +24,7 @@ TEST_CASE ("Sorted") {
     std::vector<Circle> sorted_circles{c_1, c_2, c_3, c_4};
     std::sort(sorted_circles.begin(), sorted_circles.end());
 
-    REQUIRE(std::is_sorted(sorted_circles.begin(), sorted_circles.end ()));
+    REQUIRE(std::is_sorted(sorted_circles.begin(), sorted_circles.end()));
 }
 
 int main(int argc, char* argv[])
