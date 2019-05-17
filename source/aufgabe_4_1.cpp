@@ -61,6 +61,7 @@ int main()
     {
         std::cout << "Der Name ist ungültig, geben Sie erneut einen Namen ein." << std::endl;
     } else {
+        //Iterates over circleList and prints Circle if the name matches
         for (auto& i : circleList)
         {
             if (i.getName() == name)
