@@ -9,7 +9,7 @@ C_DEFINES = -DGLEW_STATIC
 
 C_INCLUDES = -I/Users/datboi/GitHub/programmiersprachen-aufgabenblatt-3/external -I/Users/datboi/GitHub/programmiersprachen-aufgabenblatt-3/external/glfw-3.2.1/include -I/Users/datboi/GitHub/programmiersprachen-aufgabenblatt-3/external/nanovg/src -I/Users/datboi/GitHub/programmiersprachen-aufgabenblatt-3/external/catch-1.1 
 
-CXX_FLAGS = -std=c++17 -Wall -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk  
+CXX_FLAGS = -std=c++14 -Wall -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk  
 
 CXX_DEFINES = -DGLEW_STATIC
 

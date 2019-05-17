@@ -6,8 +6,10 @@
 /Users/datboi/GitHub/programmiersprachen-aufgabenblatt-3/cmake-build-debug/external/glfw-3.2.1/src/CMakeFiles/rebuild_cache.dir
 /Users/datboi/GitHub/programmiersprachen-aufgabenblatt-3/cmake-build-debug/external/glfw-3.2.1/src/CMakeFiles/edit_cache.dir
 /Users/datboi/GitHub/programmiersprachen-aufgabenblatt-3/cmake-build-debug/external/glfw-3.2.1/src/CMakeFiles/glfw.dir
-/Users/datboi/GitHub/programmiersprachen-aufgabenblatt-3/cmake-build-debug/source/CMakeFiles/rebuild_cache.dir
 /Users/datboi/GitHub/programmiersprachen-aufgabenblatt-3/cmake-build-debug/source/CMakeFiles/edit_cache.dir
-/Users/datboi/GitHub/programmiersprachen-aufgabenblatt-3/cmake-build-debug/source/CMakeFiles/aufgabe_2_und_3.dir
-/Users/datboi/GitHub/programmiersprachen-aufgabenblatt-3/cmake-build-debug/source/CMakeFiles/tests.dir
+/Users/datboi/GitHub/programmiersprachen-aufgabenblatt-3/cmake-build-debug/source/CMakeFiles/rebuild_cache.dir
+/Users/datboi/GitHub/programmiersprachen-aufgabenblatt-3/cmake-build-debug/source/CMakeFiles/aufgabe_6.dir
+/Users/datboi/GitHub/programmiersprachen-aufgabenblatt-3/cmake-build-debug/source/CMakeFiles/aufgabe_9.dir
 /Users/datboi/GitHub/programmiersprachen-aufgabenblatt-3/cmake-build-debug/source/CMakeFiles/example.dir
+/Users/datboi/GitHub/programmiersprachen-aufgabenblatt-3/cmake-build-debug/source/CMakeFiles/aufgabe_4_1.dir
+/Users/datboi/GitHub/programmiersprachen-aufgabenblatt-3/cmake-build-debug/source/CMakeFiles/aufgabe_2_und_3.dir

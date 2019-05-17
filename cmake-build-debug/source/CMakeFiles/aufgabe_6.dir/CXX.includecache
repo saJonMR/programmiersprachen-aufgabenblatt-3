@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/datboi/GitHub/programmiersprachen-aufgabenblatt-3/source/mat2.cpp
+mat2.hpp
+/Users/datboi/GitHub/programmiersprachen-aufgabenblatt-3/source/mat2.hpp
+math.h
+-
+
+/Users/datboi/GitHub/programmiersprachen-aufgabenblatt-3/source/mat2.hpp
+array
+-
+vec2.hpp
+/Users/datboi/GitHub/programmiersprachen-aufgabenblatt-3/source/vec2.hpp
+
+/Users/datboi/GitHub/programmiersprachen-aufgabenblatt-3/source/vec2.hpp
+

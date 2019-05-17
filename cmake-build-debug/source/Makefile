@@ -56,17 +56,6 @@ CMAKE_BINARY_DIR = /Users/datboi/GitHub/programmiersprachen-aufgabenblatt-3/cmak
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -77,6 +66,17 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -111,34 +111,34 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-source/CMakeFiles/aufgabe_2_und_3.dir/rule:
-	cd /Users/datboi/GitHub/programmiersprachen-aufgabenblatt-3/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 source/CMakeFiles/aufgabe_2_und_3.dir/rule
-.PHONY : source/CMakeFiles/aufgabe_2_und_3.dir/rule
+source/CMakeFiles/aufgabe_6.dir/rule:
+	cd /Users/datboi/GitHub/programmiersprachen-aufgabenblatt-3/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 source/CMakeFiles/aufgabe_6.dir/rule
+.PHONY : source/CMakeFiles/aufgabe_6.dir/rule
 
 # Convenience name for target.
-aufgabe_2_und_3: source/CMakeFiles/aufgabe_2_und_3.dir/rule
+aufgabe_6: source/CMakeFiles/aufgabe_6.dir/rule
 
-.PHONY : aufgabe_2_und_3
+.PHONY : aufgabe_6
 
 # fast build rule for target.
-aufgabe_2_und_3/fast:
-	cd /Users/datboi/GitHub/programmiersprachen-aufgabenblatt-3/cmake-build-debug && $(MAKE) -f source/CMakeFiles/aufgabe_2_und_3.dir/build.make source/CMakeFiles/aufgabe_2_und_3.dir/build
-.PHONY : aufgabe_2_und_3/fast
+aufgabe_6/fast:
+	cd /Users/datboi/GitHub/programmiersprachen-aufgabenblatt-3/cmake-build-debug && $(MAKE) -f source/CMakeFiles/aufgabe_6.dir/build.make source/CMakeFiles/aufgabe_6.dir/build
+.PHONY : aufgabe_6/fast
 
 # Convenience name for target.
-source/CMakeFiles/tests.dir/rule:
-	cd /Users/datboi/GitHub/programmiersprachen-aufgabenblatt-3/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 source/CMakeFiles/tests.dir/rule
-.PHONY : source/CMakeFiles/tests.dir/rule
+source/CMakeFiles/aufgabe_9.dir/rule:
+	cd /Users/datboi/GitHub/programmiersprachen-aufgabenblatt-3/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 source/CMakeFiles/aufgabe_9.dir/rule
+.PHONY : source/CMakeFiles/aufgabe_9.dir/rule
 
 # Convenience name for target.
-tests: source/CMakeFiles/tests.dir/rule
+aufgabe_9: source/CMakeFiles/aufgabe_9.dir/rule
 
-.PHONY : tests
+.PHONY : aufgabe_9
 
 # fast build rule for target.
-tests/fast:
-	cd /Users/datboi/GitHub/programmiersprachen-aufgabenblatt-3/cmake-build-debug && $(MAKE) -f source/CMakeFiles/tests.dir/build.make source/CMakeFiles/tests.dir/build
-.PHONY : tests/fast
+aufgabe_9/fast:
+	cd /Users/datboi/GitHub/programmiersprachen-aufgabenblatt-3/cmake-build-debug && $(MAKE) -f source/CMakeFiles/aufgabe_9.dir/build.make source/CMakeFiles/aufgabe_9.dir/build
+.PHONY : aufgabe_9/fast
 
 # Convenience name for target.
 source/CMakeFiles/example.dir/rule:
@@ -154,6 +154,36 @@ example: source/CMakeFiles/example.dir/rule
 example/fast:
 	cd /Users/datboi/GitHub/programmiersprachen-aufgabenblatt-3/cmake-build-debug && $(MAKE) -f source/CMakeFiles/example.dir/build.make source/CMakeFiles/example.dir/build
 .PHONY : example/fast
+
+# Convenience name for target.
+source/CMakeFiles/aufgabe_4_1.dir/rule:
+	cd /Users/datboi/GitHub/programmiersprachen-aufgabenblatt-3/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 source/CMakeFiles/aufgabe_4_1.dir/rule
+.PHONY : source/CMakeFiles/aufgabe_4_1.dir/rule
+
+# Convenience name for target.
+aufgabe_4_1: source/CMakeFiles/aufgabe_4_1.dir/rule
+
+.PHONY : aufgabe_4_1
+
+# fast build rule for target.
+aufgabe_4_1/fast:
+	cd /Users/datboi/GitHub/programmiersprachen-aufgabenblatt-3/cmake-build-debug && $(MAKE) -f source/CMakeFiles/aufgabe_4_1.dir/build.make source/CMakeFiles/aufgabe_4_1.dir/build
+.PHONY : aufgabe_4_1/fast
+
+# Convenience name for target.
+source/CMakeFiles/aufgabe_2_und_3.dir/rule:
+	cd /Users/datboi/GitHub/programmiersprachen-aufgabenblatt-3/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 source/CMakeFiles/aufgabe_2_und_3.dir/rule
+.PHONY : source/CMakeFiles/aufgabe_2_und_3.dir/rule
+
+# Convenience name for target.
+aufgabe_2_und_3: source/CMakeFiles/aufgabe_2_und_3.dir/rule
+
+.PHONY : aufgabe_2_und_3
+
+# fast build rule for target.
+aufgabe_2_und_3/fast:
+	cd /Users/datboi/GitHub/programmiersprachen-aufgabenblatt-3/cmake-build-debug && $(MAKE) -f source/CMakeFiles/aufgabe_2_und_3.dir/build.make source/CMakeFiles/aufgabe_2_und_3.dir/build
+.PHONY : aufgabe_2_und_3/fast
 
 aufgabe_2_und_3.o: aufgabe_2_und_3.cpp.o
 
@@ -181,6 +211,117 @@ aufgabe_2_und_3.s: aufgabe_2_und_3.cpp.s
 aufgabe_2_und_3.cpp.s:
 	cd /Users/datboi/GitHub/programmiersprachen-aufgabenblatt-3/cmake-build-debug && $(MAKE) -f source/CMakeFiles/aufgabe_2_und_3.dir/build.make source/CMakeFiles/aufgabe_2_und_3.dir/aufgabe_2_und_3.cpp.s
 .PHONY : aufgabe_2_und_3.cpp.s
+
+aufgabe_4_1.o: aufgabe_4_1.cpp.o
+
+.PHONY : aufgabe_4_1.o
+
+# target to build an object file
+aufgabe_4_1.cpp.o:
+	cd /Users/datboi/GitHub/programmiersprachen-aufgabenblatt-3/cmake-build-debug && $(MAKE) -f source/CMakeFiles/aufgabe_4_1.dir/build.make source/CMakeFiles/aufgabe_4_1.dir/aufgabe_4_1.cpp.o
+.PHONY : aufgabe_4_1.cpp.o
+
+aufgabe_4_1.i: aufgabe_4_1.cpp.i
+
+.PHONY : aufgabe_4_1.i
+
+# target to preprocess a source file
+aufgabe_4_1.cpp.i:
+	cd /Users/datboi/GitHub/programmiersprachen-aufgabenblatt-3/cmake-build-debug && $(MAKE) -f source/CMakeFiles/aufgabe_4_1.dir/build.make source/CMakeFiles/aufgabe_4_1.dir/aufgabe_4_1.cpp.i
+.PHONY : aufgabe_4_1.cpp.i
+
+aufgabe_4_1.s: aufgabe_4_1.cpp.s
+
+.PHONY : aufgabe_4_1.s
+
+# target to generate assembly for a file
+aufgabe_4_1.cpp.s:
+	cd /Users/datboi/GitHub/programmiersprachen-aufgabenblatt-3/cmake-build-debug && $(MAKE) -f source/CMakeFiles/aufgabe_4_1.dir/build.make source/CMakeFiles/aufgabe_4_1.dir/aufgabe_4_1.cpp.s
+.PHONY : aufgabe_4_1.cpp.s
+
+aufgabe_6.o: aufgabe_6.cpp.o
+
+.PHONY : aufgabe_6.o
+
+# target to build an object file
+aufgabe_6.cpp.o:
+	cd /Users/datboi/GitHub/programmiersprachen-aufgabenblatt-3/cmake-build-debug && $(MAKE) -f source/CMakeFiles/aufgabe_6.dir/build.make source/CMakeFiles/aufgabe_6.dir/aufgabe_6.cpp.o
+.PHONY : aufgabe_6.cpp.o
+
+aufgabe_6.i: aufgabe_6.cpp.i
+
+.PHONY : aufgabe_6.i
+
+# target to preprocess a source file
+aufgabe_6.cpp.i:
+	cd /Users/datboi/GitHub/programmiersprachen-aufgabenblatt-3/cmake-build-debug && $(MAKE) -f source/CMakeFiles/aufgabe_6.dir/build.make source/CMakeFiles/aufgabe_6.dir/aufgabe_6.cpp.i
+.PHONY : aufgabe_6.cpp.i
+
+aufgabe_6.s: aufgabe_6.cpp.s
+
+.PHONY : aufgabe_6.s
+
+# target to generate assembly for a file
+aufgabe_6.cpp.s:
+	cd /Users/datboi/GitHub/programmiersprachen-aufgabenblatt-3/cmake-build-debug && $(MAKE) -f source/CMakeFiles/aufgabe_6.dir/build.make source/CMakeFiles/aufgabe_6.dir/aufgabe_6.cpp.s
+.PHONY : aufgabe_6.cpp.s
+
+aufgabe_9.o: aufgabe_9.cpp.o
+
+.PHONY : aufgabe_9.o
+
+# target to build an object file
+aufgabe_9.cpp.o:
+	cd /Users/datboi/GitHub/programmiersprachen-aufgabenblatt-3/cmake-build-debug && $(MAKE) -f source/CMakeFiles/aufgabe_9.dir/build.make source/CMakeFiles/aufgabe_9.dir/aufgabe_9.cpp.o
+.PHONY : aufgabe_9.cpp.o
+
+aufgabe_9.i: aufgabe_9.cpp.i
+
+.PHONY : aufgabe_9.i
+
+# target to preprocess a source file
+aufgabe_9.cpp.i:
+	cd /Users/datboi/GitHub/programmiersprachen-aufgabenblatt-3/cmake-build-debug && $(MAKE) -f source/CMakeFiles/aufgabe_9.dir/build.make source/CMakeFiles/aufgabe_9.dir/aufgabe_9.cpp.i
+.PHONY : aufgabe_9.cpp.i
+
+aufgabe_9.s: aufgabe_9.cpp.s
+
+.PHONY : aufgabe_9.s
+
+# target to generate assembly for a file
+aufgabe_9.cpp.s:
+	cd /Users/datboi/GitHub/programmiersprachen-aufgabenblatt-3/cmake-build-debug && $(MAKE) -f source/CMakeFiles/aufgabe_9.dir/build.make source/CMakeFiles/aufgabe_9.dir/aufgabe_9.cpp.s
+.PHONY : aufgabe_9.cpp.s
+
+circle.o: circle.cpp.o
+
+.PHONY : circle.o
+
+# target to build an object file
+circle.cpp.o:
+	cd /Users/datboi/GitHub/programmiersprachen-aufgabenblatt-3/cmake-build-debug && $(MAKE) -f source/CMakeFiles/aufgabe_6.dir/build.make source/CMakeFiles/aufgabe_6.dir/circle.cpp.o
+	cd /Users/datboi/GitHub/programmiersprachen-aufgabenblatt-3/cmake-build-debug && $(MAKE) -f source/CMakeFiles/aufgabe_4_1.dir/build.make source/CMakeFiles/aufgabe_4_1.dir/circle.cpp.o
+.PHONY : circle.cpp.o
+
+circle.i: circle.cpp.i
+
+.PHONY : circle.i
+
+# target to preprocess a source file
+circle.cpp.i:
+	cd /Users/datboi/GitHub/programmiersprachen-aufgabenblatt-3/cmake-build-debug && $(MAKE) -f source/CMakeFiles/aufgabe_6.dir/build.make source/CMakeFiles/aufgabe_6.dir/circle.cpp.i
+	cd /Users/datboi/GitHub/programmiersprachen-aufgabenblatt-3/cmake-build-debug && $(MAKE) -f source/CMakeFiles/aufgabe_4_1.dir/build.make source/CMakeFiles/aufgabe_4_1.dir/circle.cpp.i
+.PHONY : circle.cpp.i
+
+circle.s: circle.cpp.s
+
+.PHONY : circle.s
+
+# target to generate assembly for a file
+circle.cpp.s:
+	cd /Users/datboi/GitHub/programmiersprachen-aufgabenblatt-3/cmake-build-debug && $(MAKE) -f source/CMakeFiles/aufgabe_6.dir/build.make source/CMakeFiles/aufgabe_6.dir/circle.cpp.s
+	cd /Users/datboi/GitHub/programmiersprachen-aufgabenblatt-3/cmake-build-debug && $(MAKE) -f source/CMakeFiles/aufgabe_4_1.dir/build.make source/CMakeFiles/aufgabe_4_1.dir/circle.cpp.s
+.PHONY : circle.cpp.s
 
 example.o: example.cpp.o
 
@@ -215,7 +356,6 @@ glew.o: glew.c.o
 
 # target to build an object file
 glew.c.o:
-	cd /Users/datboi/GitHub/programmiersprachen-aufgabenblatt-3/cmake-build-debug && $(MAKE) -f source/CMakeFiles/tests.dir/build.make source/CMakeFiles/tests.dir/glew.c.o
 	cd /Users/datboi/GitHub/programmiersprachen-aufgabenblatt-3/cmake-build-debug && $(MAKE) -f source/CMakeFiles/example.dir/build.make source/CMakeFiles/example.dir/glew.c.o
 .PHONY : glew.c.o
 
@@ -225,7 +365,6 @@ glew.i: glew.c.i
 
 # target to preprocess a source file
 glew.c.i:
-	cd /Users/datboi/GitHub/programmiersprachen-aufgabenblatt-3/cmake-build-debug && $(MAKE) -f source/CMakeFiles/tests.dir/build.make source/CMakeFiles/tests.dir/glew.c.i
 	cd /Users/datboi/GitHub/programmiersprachen-aufgabenblatt-3/cmake-build-debug && $(MAKE) -f source/CMakeFiles/example.dir/build.make source/CMakeFiles/example.dir/glew.c.i
 .PHONY : glew.c.i
 
@@ -235,36 +374,68 @@ glew.s: glew.c.s
 
 # target to generate assembly for a file
 glew.c.s:
-	cd /Users/datboi/GitHub/programmiersprachen-aufgabenblatt-3/cmake-build-debug && $(MAKE) -f source/CMakeFiles/tests.dir/build.make source/CMakeFiles/tests.dir/glew.c.s
 	cd /Users/datboi/GitHub/programmiersprachen-aufgabenblatt-3/cmake-build-debug && $(MAKE) -f source/CMakeFiles/example.dir/build.make source/CMakeFiles/example.dir/glew.c.s
 .PHONY : glew.c.s
 
-tests.o: tests.cpp.o
+mat2.o: mat2.cpp.o
 
-.PHONY : tests.o
+.PHONY : mat2.o
 
 # target to build an object file
-tests.cpp.o:
-	cd /Users/datboi/GitHub/programmiersprachen-aufgabenblatt-3/cmake-build-debug && $(MAKE) -f source/CMakeFiles/tests.dir/build.make source/CMakeFiles/tests.dir/tests.cpp.o
-.PHONY : tests.cpp.o
+mat2.cpp.o:
+	cd /Users/datboi/GitHub/programmiersprachen-aufgabenblatt-3/cmake-build-debug && $(MAKE) -f source/CMakeFiles/aufgabe_6.dir/build.make source/CMakeFiles/aufgabe_6.dir/mat2.cpp.o
+	cd /Users/datboi/GitHub/programmiersprachen-aufgabenblatt-3/cmake-build-debug && $(MAKE) -f source/CMakeFiles/aufgabe_4_1.dir/build.make source/CMakeFiles/aufgabe_4_1.dir/mat2.cpp.o
+.PHONY : mat2.cpp.o
 
-tests.i: tests.cpp.i
+mat2.i: mat2.cpp.i
 
-.PHONY : tests.i
+.PHONY : mat2.i
 
 # target to preprocess a source file
-tests.cpp.i:
-	cd /Users/datboi/GitHub/programmiersprachen-aufgabenblatt-3/cmake-build-debug && $(MAKE) -f source/CMakeFiles/tests.dir/build.make source/CMakeFiles/tests.dir/tests.cpp.i
-.PHONY : tests.cpp.i
+mat2.cpp.i:
+	cd /Users/datboi/GitHub/programmiersprachen-aufgabenblatt-3/cmake-build-debug && $(MAKE) -f source/CMakeFiles/aufgabe_6.dir/build.make source/CMakeFiles/aufgabe_6.dir/mat2.cpp.i
+	cd /Users/datboi/GitHub/programmiersprachen-aufgabenblatt-3/cmake-build-debug && $(MAKE) -f source/CMakeFiles/aufgabe_4_1.dir/build.make source/CMakeFiles/aufgabe_4_1.dir/mat2.cpp.i
+.PHONY : mat2.cpp.i
 
-tests.s: tests.cpp.s
+mat2.s: mat2.cpp.s
 
-.PHONY : tests.s
+.PHONY : mat2.s
 
 # target to generate assembly for a file
-tests.cpp.s:
-	cd /Users/datboi/GitHub/programmiersprachen-aufgabenblatt-3/cmake-build-debug && $(MAKE) -f source/CMakeFiles/tests.dir/build.make source/CMakeFiles/tests.dir/tests.cpp.s
-.PHONY : tests.cpp.s
+mat2.cpp.s:
+	cd /Users/datboi/GitHub/programmiersprachen-aufgabenblatt-3/cmake-build-debug && $(MAKE) -f source/CMakeFiles/aufgabe_6.dir/build.make source/CMakeFiles/aufgabe_6.dir/mat2.cpp.s
+	cd /Users/datboi/GitHub/programmiersprachen-aufgabenblatt-3/cmake-build-debug && $(MAKE) -f source/CMakeFiles/aufgabe_4_1.dir/build.make source/CMakeFiles/aufgabe_4_1.dir/mat2.cpp.s
+.PHONY : mat2.cpp.s
+
+vec2.o: vec2.cpp.o
+
+.PHONY : vec2.o
+
+# target to build an object file
+vec2.cpp.o:
+	cd /Users/datboi/GitHub/programmiersprachen-aufgabenblatt-3/cmake-build-debug && $(MAKE) -f source/CMakeFiles/aufgabe_6.dir/build.make source/CMakeFiles/aufgabe_6.dir/vec2.cpp.o
+	cd /Users/datboi/GitHub/programmiersprachen-aufgabenblatt-3/cmake-build-debug && $(MAKE) -f source/CMakeFiles/aufgabe_4_1.dir/build.make source/CMakeFiles/aufgabe_4_1.dir/vec2.cpp.o
+.PHONY : vec2.cpp.o
+
+vec2.i: vec2.cpp.i
+
+.PHONY : vec2.i
+
+# target to preprocess a source file
+vec2.cpp.i:
+	cd /Users/datboi/GitHub/programmiersprachen-aufgabenblatt-3/cmake-build-debug && $(MAKE) -f source/CMakeFiles/aufgabe_6.dir/build.make source/CMakeFiles/aufgabe_6.dir/vec2.cpp.i
+	cd /Users/datboi/GitHub/programmiersprachen-aufgabenblatt-3/cmake-build-debug && $(MAKE) -f source/CMakeFiles/aufgabe_4_1.dir/build.make source/CMakeFiles/aufgabe_4_1.dir/vec2.cpp.i
+.PHONY : vec2.cpp.i
+
+vec2.s: vec2.cpp.s
+
+.PHONY : vec2.s
+
+# target to generate assembly for a file
+vec2.cpp.s:
+	cd /Users/datboi/GitHub/programmiersprachen-aufgabenblatt-3/cmake-build-debug && $(MAKE) -f source/CMakeFiles/aufgabe_6.dir/build.make source/CMakeFiles/aufgabe_6.dir/vec2.cpp.s
+	cd /Users/datboi/GitHub/programmiersprachen-aufgabenblatt-3/cmake-build-debug && $(MAKE) -f source/CMakeFiles/aufgabe_4_1.dir/build.make source/CMakeFiles/aufgabe_4_1.dir/vec2.cpp.s
+.PHONY : vec2.cpp.s
 
 window.o: window.cpp.o
 
@@ -299,23 +470,40 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... aufgabe_2_und_3"
-	@echo "... tests"
+	@echo "... rebuild_cache"
+	@echo "... aufgabe_6"
+	@echo "... aufgabe_9"
 	@echo "... example"
+	@echo "... aufgabe_4_1"
+	@echo "... aufgabe_2_und_3"
 	@echo "... aufgabe_2_und_3.o"
 	@echo "... aufgabe_2_und_3.i"
 	@echo "... aufgabe_2_und_3.s"
+	@echo "... aufgabe_4_1.o"
+	@echo "... aufgabe_4_1.i"
+	@echo "... aufgabe_4_1.s"
+	@echo "... aufgabe_6.o"
+	@echo "... aufgabe_6.i"
+	@echo "... aufgabe_6.s"
+	@echo "... aufgabe_9.o"
+	@echo "... aufgabe_9.i"
+	@echo "... aufgabe_9.s"
+	@echo "... circle.o"
+	@echo "... circle.i"
+	@echo "... circle.s"
 	@echo "... example.o"
 	@echo "... example.i"
 	@echo "... example.s"
 	@echo "... glew.o"
 	@echo "... glew.i"
 	@echo "... glew.s"
-	@echo "... tests.o"
-	@echo "... tests.i"
-	@echo "... tests.s"
+	@echo "... mat2.o"
+	@echo "... mat2.i"
+	@echo "... mat2.s"
+	@echo "... vec2.o"
+	@echo "... vec2.i"
+	@echo "... vec2.s"
 	@echo "... window.o"
 	@echo "... window.i"
 	@echo "... window.s"

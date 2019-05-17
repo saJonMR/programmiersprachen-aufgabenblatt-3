@@ -6,19 +6,17 @@
 
 #IncludeRegexTransform: 
 
-/Users/datboi/GitHub/programmiersprachen-aufgabenblatt-3/source/aufgabe_2_und_3.cpp
-iostream
+/Users/datboi/GitHub/programmiersprachen-aufgabenblatt-3/source/aufgabe_9.cpp
+cstdlib
+-
+vector
 -
 list
 -
-set
+iostream
 -
-stdlib.h
+iterator
 -
-time.h
--
-map
--
-vector
+algorithm
 -
 
