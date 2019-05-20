@@ -39,6 +39,17 @@ add_executable(aufgabe_6
         mat2.cpp
         )
 
+# Build aufgabe_7
+add_executable(aufgabe_7
+        aufgabe_7.cpp
+        circle.cpp
+        circle.hpp
+        vec2.cpp
+        vec2.hpp
+        mat2.cpp
+        mat2.hpp
+        )
+
 # Build aufgabe_9
 add_executable(aufgabe_9
         aufgabe_9.cpp
@@ -57,4 +68,14 @@ add_executable(aufgabe_12
 # Build aufgabe_13
 add_executable(aufgabe_13
         aufgabe_13.cpp
+        )
+
+add_executable(test
+        tests.cpp
+        circle.cpp
+        circle.hpp
+        vec2.cpp
+        vec2.hpp
+        mat2.cpp
+        mat2.hpp
         )
