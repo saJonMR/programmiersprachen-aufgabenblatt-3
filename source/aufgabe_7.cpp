@@ -23,7 +23,7 @@ TEST_CASE("Kreis nach Radius sortiert")
 
     std::sort(radius_sort.begin(), radius_sort.end(), [](const Circle & one, const Circle & two)
     {
-        return one.getRadius() > two.getRadius();
+        return one.getRadius() < two.getRadius();
     });
 
     REQUIRE(std::is_sorted(radius_sort.begin(), radius_sort.end()));
