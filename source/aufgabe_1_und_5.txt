@@ -6,3 +6,14 @@ Zeitpunkt und Ort des einfügens bestimmt wird.
 
 Assoziative Container sind dagegen sortierte Mengen in denen die Position der Elemente durch ein Sortierkriterium 
 bestimmt wird.
+
+Beispiele:
+Speichern der Punkte eines Polygons:
+vector: feste Anzahl an Punkten -> keine Probleme mit einfuegen und loeschen + freier Zugriff
+
+Zuordnung von Farbnamen und entsprechenden RGB-Werten:
+map: sortiertes Speichern von Name(String) und RGB Werten (map, da jeder Wert nur einmal benötigt wird)
+
+FIFO-Warteschlange von Druckaufträgen:
+deque: optimiertes einfuegen am Anfang und loeschen am Ende perfekt fuer FIFO
+
