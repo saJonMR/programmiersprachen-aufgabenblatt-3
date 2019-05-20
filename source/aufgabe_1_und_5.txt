@@ -1,4 +1,5 @@
-STL beinhaltet die sequentiellen Container vector, deque und list, sowie die assoziativen Container set, multiset, 
+1.
+STL beinhaltet die sequentiellen Container vector, deque und list, sowie die assoziativen Container set, multiset,
 map und multimap.
 
 Sequentielle Container sind geordnete Mengen, in denen jedes Element eine bestimmte Position besitzt, welche durch den 
@@ -17,3 +18,10 @@ map: sortiertes Speichern von Name(String) und RGB Werten (map, da jeder Wert nu
 FIFO-Warteschlange von Druckaufträgen:
 deque: optimiertes einfuegen am Anfang und loeschen am Ende perfekt fuer FIFO
 
+5.
+Das Problem im oberen Code ist, dass Fred Fuchs nicht initialisiert wurde.
+
+Wenn man versucht ein Element aus set löscht, welches nicht in set ist,
+dann tut die Funktion exmatrikulation 0 returnen.
+Normalerweise wird bei einer erase Funktion nach dem Löschen 1 returned, ist das Element
+nicht vorhanden, wird 0 returned.
