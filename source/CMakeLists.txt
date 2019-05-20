@@ -53,3 +53,8 @@ add_executable(aufgabe_11
 add_executable(aufgabe_12
         aufgabe_12.cpp
         )
+
+# Build aufgabe_13
+add_executable(aufgabe_13
+        aufgabe_13.cpp
+        )
